@@ -119,17 +119,20 @@ npm install
 
 ### 4. รันโปรเจกต์
 
-รัน backend และ frontend พร้อมกัน:
+เปิด terminal สองหน้าต่าง แล้วรันแยกกัน:
+
+**Terminal 1 — Backend:**
 
 ```bash
-make dev
+cd backend
+npm run dev
 ```
 
-หรือรันแยกกัน:
+**Terminal 2 — Frontend:**
 
 ```bash
-make backend    # หรือ: cd backend && npm run dev
-make frontend   # หรือ: cd frontend && npm run dev
+cd frontend
+npm run dev
 ```
 
 ### 5. เข้าใช้งาน
