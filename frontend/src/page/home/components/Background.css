@@ -1,0 +1,47 @@
+.BigCircle {
+    width: 406px;
+    height: 406px;
+    display: block;
+    background: linear-gradient(229deg, #7aa2ff 13%, rgba(110, 151, 240, 0) 35.0235827429153%, rgba(92, 113, 219, 0) 64.17244225559735%, rgb(92, 74, 199) 88%);
+    overflow: hidden;
+    gap: 10px;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    border-radius: 363px;
+    filter: blur(10px);
+    animation: rotate 10s infinite linear
+}
+
+.SmallCircle {
+    width: 300px;
+    height: 300px;
+    display: block;
+    background: linear-gradient(141deg, #887aff 13%, rgba(119, 110, 240, 0) 35.0235827429153%, rgba(113, 92, 219, 0) 64.17244225559735%, rgb(74, 76, 199) 88%);
+    overflow: hidden;
+    z-index: 1;
+    aspect-ratio: 1 / 1;
+    border-radius: 363px;
+    filter: blur(17px);
+    animation: rotateBack 6s infinite linear
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateBack {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
